@@ -11,10 +11,10 @@
   <meta property="og:description" content="Móveis planejados sob medida para aproveitar cada centímetro do seu ambiente." />
   <meta property="og:type" content="website" />
 
-  <!-- Fontes: Jost (display geométrico, elegante) + Poppins (corpo clean e arejado) -->
+  <!-- Fontes: Playfair Display (serifa elegante p/ títulos) + Montserrat (sans clean p/ UI e corpo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -23,6 +23,15 @@
        HEADER / NAVEGAÇÃO
        Fixo no topo, com CTA principal sempre visível (foco em conversão)
   ============================================================ -->
+  <!-- Barra superior de confiança (estilo editorial) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Projetos 100% sob medida</span>
+      <span class="topbar-sep">Atendimento do projeto à montagem</span>
+      <span>Seg–Sex 09h–19h · Sáb 09h–18h</span>
+    </div>
+  </div>
+
   <header class="site-header" id="topo">
     <div class="container header-inner">
       <a href="#topo" class="brand" aria-label="Comar Móveis Planejados">
@@ -59,9 +68,18 @@
          Texto + CTAs de um lado, grande imagem do ambiente do outro
     ============================================================ -->
     <section class="hero">
-      <div class="container hero-grid">
+      <!-- Foto do ambiente planejado em fundo full-bleed -->
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85"
+          alt="Sala de estar com móveis planejados sob medida, em tons quentes de madeira"
+          loading="eager" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-inner">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Móveis planejados sob medida</p>
+          <p class="eyebrow">Design atemporal · Marcenaria sob medida</p>
           <h1 class="hero-title">
             Planejados sob medida para aproveitar
             <span class="accent">cada centímetro</span> do seu ambiente
@@ -73,41 +91,13 @@
 
           <div class="hero-actions">
             <a href="#contato" class="btn btn-primary btn-lg">Solicitar orçamento</a>
-            <a href="#ambientes" class="btn btn-ghost btn-lg">Ver ambientes planejados</a>
+            <a href="#ambientes" class="btn btn-underline">Ver ambientes planejados</a>
           </div>
 
           <p class="hero-micro">
             <svg viewBox="0 0 24 24" class="ico-check" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
             Atendimento personalizado do projeto à montagem.
           </p>
-
-          <!-- Destaque de credibilidade -->
-          <div class="hero-credibility">
-            <div class="cred-item">
-              <strong>+15 anos</strong>
-              <span>transformando projetos em realidade</span>
-            </div>
-            <div class="cred-divider" aria-hidden="true"></div>
-            <div class="cred-item">
-              <strong>Sob medida</strong>
-              <span>do projeto à montagem completa</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="hero-image-main">
-            <img
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1100&q=80"
-              alt="Cozinha planejada sob medida com marcenaria em tons de madeira clara"
-              loading="eager" width="1100" height="1300" />
-          </div>
-          <!-- Card flutuante de prova de valor -->
-          <div class="hero-float-card">
-            <div class="float-stars" aria-hidden="true">★★★★★</div>
-            <p>“Aproveitaram um espaço que eu achava impossível.”</p>
-            <span>— Clientes que indicam a Comar</span>
-          </div>
         </div>
       </div>
     </section>
